@@ -1,0 +1,55 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+*.nupkg
+*.snupkg
+packages/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.cache
+*.DotSettings.user
+_ReSharper*/
+
+# Publish profiles: keep the .pubxml, ignore per-user data and publish output
+*.pubxml.user
+*.publishproj
+[Pp]ublish/
+PublishScripts/
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+coverage*.json
+coverage*.xml
+
+# Local config and secrets
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+appsettings.*.local.json
+secrets.json
+*.pfx
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store

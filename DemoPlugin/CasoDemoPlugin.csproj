@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Los plug-ins de Dataverse deben compilarse para .NET Framework 4.6.2 -->
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>CasoDemoPlugin</AssemblyName>
+    <RootNamespace>CasoDemoPlugin</RootNamespace>
+    <LangVersion>latest</LangVersion>
+
+    <!-- El ensamblado DEBE estar firmado para registrarlo en Dataverse.
+         Genera la llave con:  sn -k CasoDemoPlugin.snk   (Developer Command Prompt de VS)
+         o desde VS: Propiedades del proyecto > Firma. Luego descomenta estas dos líneas. -->
+     <SignAssembly>true</SignAssembly> 
+     <AssemblyOriginatorKeyFile>CasoDemoPlugin.snk</AssemblyOriginatorKeyFile> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.*" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
